@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "text": "Пройти онлайн-курс по JavaScript",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "text": "Пробежка в парке 3 раза",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "text": "10 минут медитации",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "text": "Читать 1 час",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "text": "Купить продукты",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "text": "Завершить Todo App на Frontend Mentor",
+      "completed": false
+    }
+  ]
