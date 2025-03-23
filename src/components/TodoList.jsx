@@ -30,15 +30,15 @@ const TodoItem = ({ todo, index, toggleTodo, moveTodo, theme }) => {
   return (
     <div
       ref={(node) => drag(drop(node))}
-      className={`flex items-center p-4 border-b border-gray-200 ${
+      className={`flex items-center p-4 border-b border-gray-200 cursor-pointer ${
         theme === "dark" ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
       } ${isDragging ? "opacity-50" : "opacity-100"}`}
     >
       <div
         onClick={() => toggleTodo(todo.id)}
-        className={`w-6 h-6 rounded-full border-2 cursor-pointer flex items-center justify-center mr-4 ${
+        className={`w-6 h-6 rounded-full border-2 cursor-pointer flex items-center justify-center mr-4  ${
           todo.completed
-            ? "bg-gradient-to-r from-blue-400 to-purple-500 border-none"
+            ? "bg-gradient-to-r from-blue-400 to-purple-500 border-none "
             : theme === "dark"
             ? "border-gray-500"
             : "border-gray-300"
@@ -215,11 +215,11 @@ export default function TodoList() {
                 {todos.filter((todo) => !todo.completed).length} items left
               </span>
               <div className="space-x-2">
-                <button
+                <button 
                   onClick={() => setFilter("all")}
                   className={`${
                     filter === "all" ? "text-blue-500" : ""
-                  } hover:text-blue-500`}
+                  } hover:text-blue-500 cursor-pointer`}
                 >
                   All
                 </button>
@@ -227,7 +227,7 @@ export default function TodoList() {
                   onClick={() => setFilter("active")}
                   className={`${
                     filter === "active" ? "text-blue-500" : ""
-                  } hover:text-blue-500`}
+                  } hover:text-blue-500 cursor-pointer`}
                 >
                   Active
                 </button>
@@ -235,14 +235,14 @@ export default function TodoList() {
                   onClick={() => setFilter("completed")}
                   className={`${
                     filter === "completed" ? "text-blue-500" : ""
-                  } hover:text-blue-500`}
+                  } hover:text-blue-500 cursor-pointer`}
                 >
                   Completed
                 </button>
               </div>
               <button
                 onClick={clearCompleted}
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 cursor-pointer"
               >
                 Clear Completed
               </button>
