@@ -151,7 +151,7 @@ export default function TodoList() {
             <h1 className="text-4xl font-bold text-white tracking-widest">
               TODO
             </h1>
-            <button onClick={toggleTheme}>
+            <button onClick={toggleTheme} className="cursor-pointer">
               <img
                 src={
                   theme === "dark"
